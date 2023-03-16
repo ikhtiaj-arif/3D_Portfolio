@@ -1,9 +1,7 @@
-import React from 'react'
+import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
-  return (
-    <div>Experience</div>
-  )
-}
+  return <div>Experience</div>;
+};
 
-export default Experience
+export default Experience;
