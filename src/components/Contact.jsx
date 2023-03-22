@@ -1,3 +1,4 @@
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 
@@ -16,9 +17,45 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = () => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .send(
+        "service_6x0fk7k",
+        "template_aad9kfz",
+        {
+          from_name: form.name,
+          to_name: "Arif",
+          from_email: form.email,
+          to_email: "md.ikhtiajarif@gmail.com",
+          message: form.message,
+        },
+        "9gCFMkYrekME55uoH"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("thanks");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          alert("something went wrong");
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
