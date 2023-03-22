@@ -1,4 +1,6 @@
+import { Toaster } from "react-hot-toast";
 import { BrowserRouter } from "react-router-dom";
+
 import {
   About,
   Contact,
@@ -8,12 +10,13 @@ import {
   Navbar,
   StarsCanvas,
   Tech,
-  Works
+  Works,
 } from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Toaster position="top-center" reverseOrder={false} />
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />

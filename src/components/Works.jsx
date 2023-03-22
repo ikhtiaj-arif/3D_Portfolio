@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Tilt from "react-tilt";
-import { github } from "../assets";
+import { eye, github } from "../assets";
 import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
@@ -13,6 +13,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -33,11 +34,11 @@ const ProjectCard = ({
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             {/* for live site */}
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              onClick={() => window.open(live_link, "_blank")}
+              className="black-gradient w-10 h-10 mr-2 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
-                src=""
+                src={eye}
                 alt="Live-site"
                 className="w-1/2 h-1/2 object-contain"
               />
@@ -83,10 +84,12 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-          reiciendis deleniti omnis eos explicabo sapiente magni? Neque modi
-          harum amet repellat, cumque, ipsa tenetur libero est illum nam,
-          assumenda debitis!
+          The following projects showcase my skillset & experience as a
+          full-stack developer through real-world examples which solved
+          real-world problems. Projects are briefly described with the link to
+          code repositorys and live examples. It reflects my skills and ability
+          to solve complex problems, work on new and latest technologies and
+          project management abilities.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

@@ -1,6 +1,6 @@
 import {
-    backend, carrent, creator, css, docker, figma, git, html, javascript, jobit, meta, mobile, mongodb, nodejs, reactjs,
-    redux, shopify, starbucks, tailwind, tesla, threejs, tripguide, typescript, web
+  backend, creator, css, dorkar, Edu, figma, freeCodeCmap, git, html, javascript, meta, mobile, mongodb, moto, nodejs, programmingHero, reactjs,
+  redux, shopify, starbucks, tailwind, tesla, threejs, typescript, web
 } from "../assets";
   
   export const navLinks = [
@@ -24,7 +24,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "MERN stack Developer",
       icon: mobile,
     },
     {
@@ -32,7 +32,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Researcher",
       icon: creator,
     },
   ];
@@ -85,12 +85,38 @@ import {
     {
       name: "figma",
       icon: figma,
+    }
+
+  ];
+
+  const courses = [
+    {
+      title: "JavaScript Algorithms and Data Structures",
+      company_name: "FreeCodeCamp",
+      icon: freeCodeCmap,
+      iconBg: "#383E56",
+      date: "March 2021 - December 2021",
+      points: [
+        "Learned the basics of programming and problem solving",
+        "Learned about DataStructures and how it works.",
+        "Solved Algorithmic problems.",
+        "Learned the basics of Object Oriented Programming",
+      ],
     },
     {
-      name: "docker",
-      icon: docker,
+      title: "Complete Web Development With Jhankar Mahbub",
+      company_name: "Programming_Hero",
+      icon: programmingHero,
+      iconBg: "#383E56",
+      date: "June 2022 - January 2023",
+      points: [
+        "Learned the MERN stack and build 10+ projects.",
+        "Finished all the assignments within the deadline",
+        "Built and deployed projects with the team and lead the team.",
+        "Understood the fundamentals of web development.",
+      ],
     },
-  ];
+  ]
   
   const experiences = [
     {
@@ -176,9 +202,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Dorkar Shop",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based E-Commers platform that allows users to search, book, and buy products from various vendors, providing a convenient and efficient solution for daily shopping needs.",
       tags: [
         {
           name: "react",
@@ -192,14 +218,19 @@ import {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "TyepScript",
+          color: "blue-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: dorkar,
+      source_code_link: "https://github.com/TheOpenAi/DorkarShop-Client",
+      live_link: "https://dork-shop.web.app/"
     },
     {
-      name: "Job IT",
+      name: "Moto-Cross",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that enables users to search for available used bikes at there targeted rigion, view estimated price ranges along with condition of the bike, and locate available bikes based on their current location.",
       tags: [
         {
           name: "react",
@@ -210,24 +241,33 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "node",
+          color: "green-text-gradient",
+        },
+        {
+          name: "express",
+          color: "blue-text-gradient",
+        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: moto,
+      source_code_link: "https://github.com/ikhtiaj-arif/MOTO-CROSS-Client",
+      live_link: "https://moto-cross-1.web.app/"
     },
     {
-      name: "Trip Guide",
+      name: "EducatorIO",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A comprehensive education platform that allows users to read & download cources.",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "node",
           color: "green-text-gradient",
         },
         {
@@ -235,9 +275,11 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: Edu,
+      source_code_link: "https://github.com/ikhtiaj-arif/Educator-IO-Client",
+      live_link: "https://educatorio.web.app/"
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, courses, experiences, testimonials, projects };
+

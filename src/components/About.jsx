@@ -42,11 +42,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
-        obcaecati excepturi facere. Minus saepe sequi vitae in atque, ullam
-        ducimus quidem ratione vero quia, debitis optio recusandae? Qui, harum,
-        vitae minus quas facere, voluptatibus amet unde error aspernatur sequi
-        provident?
+        I'm a skilled web developer with experience in MERN stack, JavaScript,
+        TypeScript, and expertise in the latest frameworks such as NodeJS,
+        ReactJS, NextJS, and ExpressJS. I'm a quick learner and collaborate
+        deeply with fellow developers and clients to get scalable and efficient
+        solutions to real-world problems. Let's work together and turn your
+        vision into reality.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
